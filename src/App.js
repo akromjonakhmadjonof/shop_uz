@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Router, Switch} from 'react-router-dom';
+import {Router, Switch, Route} from 'react-router-dom';
 import routes from 'location';
 import _ from 'lodash';
 import MultiRouter from 'location/MultiRouter';
 import NotFound from 'components/NotFound';
-import {Route} from 'react-router';
 import Snackbar from 'components/Snackbar';
 import DeleteDialog from 'components/Dialog';
 import {connect} from 'react-redux';
@@ -17,51 +16,42 @@ import {getToken} from './tools/storage/storage';
 import ConsoleProvider from './providers/ConsoleProvider';
 
 export const socket = io.connect('http://localhost:9998/', {
-	auth:{
-		token:getToken()
-	},
-	query:{}
+    auth: {
+        token: getToken()
+    }, query: {}
 });
 
-const enhance = compose(
-	connect(),
-	lifecycle({
-		componentDidMount() {
-			const dispatch = this.props.dispatch;
-			const token = getToken()
-			token && dispatch(authAction());
-		}
-	}),
-);
+const enhance = compose(connect(), lifecycle({
+    componentDidMount() {
+        const dispatch = this.props.dispatch;
+        const token = getToken()
+        token && dispatch(authAction());
+    }
+}),);
 
 // Base app
 function App(props) {
-	// Props data
-	const {history} = props;
+    // Props data
+    const {history} = props;
 
-	// Render
-	return (
-		<>
-			<ConsoleProvider>
-				<Snackbar/>
-				<DeleteDialog/>
-				<Error/>
-				<Router history={history}>
-					<Switch>
-						{_.map(routes, (route, key) => (
-							<MultiRouter key={key} {...route} />
-						))}
-						<Route path="*" component={NotFound}/>
-					</Switch>
-				</Router>
-			</ConsoleProvider>
-		</>
-	);
+    // Render
+    return (<>
+        <ConsoleProvider>
+            <Snackbar/>
+            <DeleteDialog/>
+            <Error/>
+            <Router history={history}>
+                <Switch>
+                    {_.map(routes, (route, key) => (<MultiRouter key={key} {...route} />))}
+                    <Route component={NotFound}/>
+                </Switch>
+            </Router>
+        </ConsoleProvider>
+    </>);
 }
 
 App.propTypes = {
-	store:PropTypes.any.isRequired,
-	history:PropTypes.any.isRequired,
+    store: PropTypes.any.isRequired, history: PropTypes.any.isRequired,
 };
 
 export default enhance(App);
