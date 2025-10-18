@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Euclid Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Euclid Circular A Regular'), url('Euclid Circular A Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Euclid Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Euclid Circular A Italic'), url('Euclid Circular A Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Euclid Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Euclid Circular A Light'), url('Euclid Circular A Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Euclid Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Euclid Circular A Light Italic'), url('Euclid Circular A Light Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Euclid Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Euclid Circular A Medium'), url('Euclid Circular A Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Euclid Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Euclid Circular A Medium Italic'), url('Euclid Circular A Medium Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Euclid SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Euclid Circular A SemiBold'), url('Euclid Circular A SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Euclid SemiBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Euclid Circular A SemiBold Italic'), url('Euclid Circular A SemiBold Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Euclid Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Euclid Circular A Bold'), url('Euclid Circular A Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Euclid Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Euclid Circular A Bold Italic'), url('Euclid Circular A Bold Italic.woff') format('woff');
+}

@@ -1,0 +1,32 @@
+export default {
+	ru:{
+		company:'Компания',
+		deliveries:'Поставщикам',
+		empty_in_company:'Вакансии в компании',
+		contacts:'Контакты',
+		customers:'покупателям',
+		delivery_and_payment:'Доставка и оплата',
+		return_products:'Возврат товара',
+		all_reversed:'Все права защищены',
+	},
+	en:{
+		company:'Company',
+		deliveries:'Deliveries',
+		empty_in_company:'Empty in company',
+		contacts:'Contacts',
+		customers:'Customer',
+		delivery_and_payment:'Delivery and Payment',
+		return_products:'Return products',
+		all_reversed:'All rights reserved',
+	},
+	uz:{
+		company:'Kompaniya',
+		deliveries:'Yetkazib beruvchilar',
+		empty_in_company:'Bo\'sh ish o\'rini',
+		contacts:'Aloqa',
+		customers:'Mijozlar',
+		delivery_and_payment:'Yetkazib berish va To\'lash',
+		return_products:'Mahsulotni qaytarish',
+		all_reversed:'Barcha huqular himoyalangan',
+	},
+};

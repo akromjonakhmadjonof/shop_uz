@@ -1,0 +1,270 @@
+@import 'fonts/style.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~slick-carousel/slick/slick.css';
+
+:root {
+    --base-font-family: 'Euclid Regular';
+    --bold: 'Euclid Bold';
+    --semi-bold: 'Euclid SemiBold';
+    --medium: 'Euclid Medium';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    padding: 0;
+    font-family: var(--base-font-family), sans-serif !important;
+    font-size: 16px;
+    overflow: hidden scroll;
+    line-height: 1.25;
+    color: #333;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #3B68CD !important;
+}
+
+label, button, input {
+    font-size: 13px !important;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+}
+
+.slick-dots {
+    list-style: none !important;
+}
+
+.slick-dots > li > button:before {
+    display: none;
+}
+
+strong {
+    font-weight: 600;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dbdbdb;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+textarea {
+    resize: none !important;
+}
+
+textarea::-webkit-scrollbar {
+    width: 3px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.row > * {
+    padding: 0;
+    margin: 0;
+}
+
+.card-home {
+    margin-top: 40px;
+}
+
+.mt-85 {
+    margin-top: 30px;
+}
+
+
+body.hidden {
+    overflow: hidden;
+}
+
+.row > * {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.menu-bar .col-3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.card-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34px;
+}
+
+.category-search-section {
+    width: inherit;
+}
+
+.MuiSkeleton-root {
+    width: 100%;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+em {
+    display: none;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 770px) {
+    .menu-bar > div > :nth-child(1) {
+        justify-content: flex-end;
+    }
+
+    .menu-bar > div > :nth-child(2),
+    .menu-bar > div > :nth-child(3),
+    .menu-bar > div > :nth-child(4),
+    .menu-bar > div > :nth-child(5) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .menu-column {
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    .menu-column p {
+        font-size: 16px;
+    }
+
+    .menu-column > :last-child {
+        margin-top: 20px;
+    }
+
+    .menu-column > :last-child > :first-child {
+        margin-left: -5px;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    .footer-mb-25 {
+        margin-bottom: 40px;
+    }
+
+    .footer-row > :nth-child(3) > ul {
+        align-items: end !important;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .footer-mb-25 {
+        margin-bottom: 40px;
+    }
+
+    .footer-row > :nth-child(3) > ul {
+        align-items: start !important;
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .filters {
+        display: none !important
+    }
+
+    .category-search-section {
+        width: 100%;
+    }
+}
+
+/*
+@media only screen and (max-width: 615px) {
+    body, html {
+        min-width: 800px !important;
+        overflow: scroll !important;
+    }
+}
+*/
+
+.ant-select-focused .ant-select-selector,
+.ant-select-selector:focus,
+.ant-select-selector:active,
+.ant-select-open .ant-select-selector {
+    border-color: #d9d9d9 !important;
+    box-shadow: none !important;
+}
+
+iframe {
+    display: none !important;
+}
+
+.map {
+    display: block !important;
+    border-radius: 11px;
+    margin-bottom: 20px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #00000000 inset !important;
+    background: #00000000 !important;
+}
+
+

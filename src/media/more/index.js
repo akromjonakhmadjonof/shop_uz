@@ -1,0 +1,11 @@
+export {default as Clothes} from './Clothes';
+export {default as Bar} from './Bar';
+export {default as Kitchen} from './Kitchen';
+export {default as Film} from './Film';
+export {default as Music} from './Music';
+export {default as Fitness} from './Fitness';
+export {default as Travel} from './Travel';
+export {default as Pets} from './Pets';
+export {default as Garden} from './Garden';
+export {default as Electronics} from './Electronics';
+export {default as Baby} from './Baby';
